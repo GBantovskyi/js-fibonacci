@@ -1,0 +1,16 @@
+// 1 1 2 3 5 8 13 21
+
+
+let number = parseInt(prompt("Enter Fibonacci number"));
+while (Number.isNaN(number)) {
+    alert("You have to enter a number");
+    number = parseInt(prompt("Enter Fibonacci number"));
+}
+function fibonacci(number) {
+    if (number >= 1) {
+
+        return fibonacci(number - 1) + fibonacci(number - 2);
+    }
+}
+
+alert (fibonacci(number));
